@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Use Set’s battle-tested asset management tools and infrastructure to easily manage your crypto portfolios." />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="keywords" content="TokenSets,Set Protocol,Set,crypto,cryptocurrency,cryptocurrencies,stocks,asset management,ethereum,bitcoin,dai,investment,growth,blockchain,buy,sell,robo advisor,trade,trading strategies,portfolio,finance,blockchain,portfolio,tech,smart contracts"
+    />
+    <meta name="referrer" content="always" />
+    <meta property="fb:app_id" content="233404883874331" />
+    <meta property="og:title" content="TokenSets - Asset Management Simplified" />
+    <meta property="og:site_name" content="TokenSets" />
+    <meta property="og:description" content="Use Set’s battle-tested asset management tools and infrastructure to easily manage your crypto portfolios." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tokensets.com" />
+    <meta property="og:image" content="https://set-core.s3.amazonaws.com/img/app-preview/app-preview.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="TokenSets - Asset Management Simplified" />
+    <meta property="twitter:description" content="Use Set’s battle-tested asset management tools and infrastructure to easily manage your crypto portfolios." />
+    <meta property="twitter:site" content="@setprotocol" />
+    <meta property="twitter:creator" content="@setprotocol" />
+    <meta property="twitter:image" name="twitter:image" content="https://set-core.s3.amazonaws.com/img/app-preview/app-preview.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://www.tokensets.com/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="canonical" href="https://www.tokensets.com">
+    <title>TokenSets - Asset Management Simplified</title>
+    <script type="text/javascript">
+        ! function(o) {
+            o.addEventListener("error", function(e) {
+                e.message && "#retry" !== o.location.hash && (e.message.includes("Unexpected token '<'") || e.message.includes("expected expression, got '<'")) && (console.log("Bundle out of date, reloading the page"), o.location.hash = "#retry", o.location.reload(!0))
+            }, !0)
+        }(window)
+    </script>
+    <script>
+        ! function() {
+            var i = window.analytics = window.analytics || [];
+            if (!i.initialize)
+                if (i.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+                else {
+                    i.invoked = !0, i.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"], i.factory = function(t) {
+                        return function() {
+                            var e = Array.prototype.slice.call(arguments);
+                            return e.unshift(t), i.push(e), i
+                        }
+                    };
+                    for (var e = 0; e < i.methods.length; e++) {
+                        var t = i.methods[e];
+                        i[t] = i.factory(t)
+                    }
+                    i.load = function(e, t) {
+                        var n = document.createElement("script");
+                        n.type = "text/javascript", n.async = !0, n.src = "https://cdn.segment.com/analytics.js/v1/" + e + "/analytics.min.js";
+                        var a = document.getElementsByTagName("script")[0];
+                        a.parentNode.insertBefore(n, a), i._loadOptions = t
+                    }, i.SNIPPET_VERSION = "4.1.0", i.load("ehJMz0TGTlJignYwUZci867pZxPBNQNn"), i.page()
+                }
+        }()
+    </script>
+    <script>
+        var _rollbarConfig = {
+            accessToken: "22bfb0e106af43a5a3171c1b8a1ee52b",
+            captureUncaught: !0,
+            captureUnhandledRejections: !0,
+            hostWhiteList: ["tokensets.com"],
+            ignoredMessages: ["expected expression, got '<'", "Unexpected token '<'", "SyntaxError: Unexpected token '<'", "Failed to fetch", "cancelled", "Abgebrochen", "Unable to find address for contract ERC20Detailed on network", "Fortmatic: User denied transaction.", "Internal JSON-RPC error", "Wrong response id", "Transaction mined very quickly"],
+            payload: {
+                environment: "production",
+                client: {
+                    javascript: {
+                        source_map_enabled: !0,
+                        code_version: "e9ec73aea486dd4aaec19894e66de56407988e82",
+                        guess_uncaught_frames: !0
+                    }
+                }
+            }
+        };
+        ! function(o) {
+            function n(r) {
+                if (t[r]) return t[r].exports;
+                var e = t[r] = {
+                    exports: {},
+                    id: r,
+                    loaded: !1
+                };
+                return o[r].call(e.exports, e, e.exports, n), e.loaded = !0, e.exports
+            }
+            var t = {};
+            n.m = o, n.c = t, n.p = "", n(0)
+        }([function(r, e, o) {
+            "use strict";
+            var n = o(1),
+                t = o(4);
+            (_rollbarConfig = _rollbarConfig || {}).rollbarJsUrl = _rollbarConfig.rollbarJsUrl || "https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.3.9/rollbar.min.js", _rollbarConfig.async = void 0 === _rollbarConfig.async || _rollbarConfig.async;
+            var a = n.setupShim(window, _rollbarConfig),
+                l = t(_rollbarConfig);
+            window.rollbar = n.Rollbar, a.loadFull(window, document, !_rollbarConfig.async, _rollbarConfig, l)
+        }, function(r, e, o) {
+            "use strict";
+
+            function c(r) {
+                return function() {
+                    try {
+                        return r.apply(this, arguments)
+                    } catch (r) {
+                        try {
+                            console.error("[Rollbar]: Internal error", r)
+                        } catch (r) {}
+                    }
+                }
+            }
+
+            function n(r, e) {
+                this.options = r, this._rollbarOldOnError = null;
+                var o = l++;
+                this.shimId = function() {
+                    return o
+                }, "undefined" != typeof window && window._rollbarShims && (window._rollbarShims[o] = {
+                    handler: e,
+                    messages: []
+                })
+            }
+
+            function t(o) {
+                return c(function() {
+                    var r = Array.prototype.slice.call(arguments, 0),
+                        e = {
+                            shim: this,
+                            method: o,
+                            args: r,
+                            ts: new Date
+                        };
+                    window._rollbarShims[this.shimId()].messages.push(e)
+                })
+            }
+            var a = o(2),
+                l = 0,
+                i = o(3).bind(null, function(r, e) {
+                    return new n(r, e)
+                });
+            n.prototype.loadFull = function(l, r, e, o, i) {
+                var n = !1,
+                    t = r.createElement("script"),
+                    a = r.getElementsByTagName("script")[0],
+                    s = a.parentNode;
+                t.crossOrigin = "", t.src = o.rollbarJsUrl, e || (t.async = !0), t.onload = t.onreadystatechange = c(function() {
+                    if (!(n || this.readyState && "loaded" !== this.readyState && "complete" !== this.readyState)) {
+                        t.onload = t.onreadystatechange = null;
+                        try {
+                            s.removeChild(t)
+                        } catch (r) {}
+                        n = !0,
+                            function() {
+                                var r;
+                                if (void 0 === l._rollbarDidLoad) {
+                                    r = new Error("rollbar.js did not load");
+                                    for (var e, o, n, t, a = 0; e = l._rollbarShims[a++];)
+                                        for (e = e.messages || []; o = e.shift();)
+                                            for (n = o.args || [], a = 0; a < n.length; ++a)
+                                                if ("function" == typeof(t = n[a])) {
+                                                    t(r);
+                                                    break
+                                                }
+                                }
+                                "function" == typeof i && i(r)
+                            }()
+                    }
+                }), s.insertBefore(t, a)
+            }, n.prototype.wrap = function(o, r, n) {
+                try {
+                    var t;
+                    if (t = "function" == typeof r ? r : function() {
+                            return r || {}
+                        }, "function" != typeof o) return o;
+                    if (o._isWrap) return o;
+                    if (!o._rollbar_wrapped && (o._rollbar_wrapped = function() {
+                            n && "function" == typeof n && n.apply(this, arguments);
+                            try {
+                                return o.apply(this, arguments)
+                            } catch (r) {
+                                var e = r;
+                                throw "string" == typeof e && (e = new String(e)), e._rollbarContext = t() || {}, e._rollbarContext._wrappedSource = o.toString(), window._rollbarWrappedError = e
+                            }
+                        }, o._rollbar_wrapped._isWrap = !0, o.hasOwnProperty))
+                        for (var e in o) o.hasOwnProperty(e) && (o._rollbar_wrapped[e] = o[e]);
+                    return o._rollbar_wrapped
+                } catch (r) {
+                    return o
+                }
+            };
+            for (var s = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","), d = 0; d < s.length; ++d) n.prototype[s[d]] = t(s[d]);
+            r.exports = {
+                setupShim: function(e, o) {
+                    if (e) {
+                        var n = o.globalAlias || "Rollbar";
+                        if ("object" == typeof e[n]) return e[n];
+                        e._rollbarShims = {}, e._rollbarWrappedError = null;
+                        var t = new i(o);
+                        return c(function() {
+                            o.captureUncaught && (t._rollbarOldOnError = e.onerror, a.captureUncaughtExceptions(e, t, !0), a.wrapGlobals(e, t, !0)), o.captureUnhandledRejections && a.captureUnhandledRejections(e, t, !0);
+                            var r = o.autoInstrument;
+                            return !1 !== o.enabled && (void 0 === r || !0 === r || "object" == typeof r && r.network) && e.addEventListener && (e.addEventListener("load", t.captureLoad.bind(t)), e.addEventListener("DOMContentLoaded", t.captureDomContentLoaded.bind(t))), e[n] = t
+                        })()
+                    }
+                },
+                Rollbar: i
+            }
+        }, function(r, e) {
+            "use strict";
+
+            function l(n, r, e) {
+                if (r.hasOwnProperty && r.hasOwnProperty("addEventListener")) {
+                    for (var t = r.addEventListener; t._rollbarOldAdd && t.belongsToShim;) t = t._rollbarOldAdd;
+                    var o = function(r, e, o) {
+                        t.call(this, r, n.wrap(e), o)
+                    };
+                    o._rollbarOldAdd = t, o.belongsToShim = e, r.addEventListener = o;
+                    for (var a = r.removeEventListener; a._rollbarOldRemove && a.belongsToShim;) a = a._rollbarOldRemove;
+                    var l = function(r, e, o) {
+                        a.call(this, r, e && e._rollbar_wrapped || e, o)
+                    };
+                    l._rollbarOldRemove = a, l.belongsToShim = e, r.removeEventListener = l
+                }
+            }
+            r.exports = {
+                captureUncaughtExceptions: function(a, l, r) {
+                    if (a) {
+                        var i;
+                        "function" == typeof l._rollbarOldOnError ? i = l._rollbarOldOnError : a.onerror && !a.onerror.belongsToShim && (i = a.onerror, l._rollbarOldOnError = i);
+                        var e = function() {
+                            var r, e, o, n, t = Array.prototype.slice.call(arguments, 0);
+                            e = l, o = i, n = t, (r = a)._rollbarWrappedError && (n[4] || (n[4] = r._rollbarWrappedError), n[5] || (n[5] = r._rollbarWrappedError._rollbarContext), r._rollbarWrappedError = null), e.handleUncaughtException.apply(e, n), o && o.apply(r, n)
+                        };
+                        e.belongsToShim = r, a.onerror = e
+                    }
+                },
+                captureUnhandledRejections: function(r, t, e) {
+                    if (r) {
+                        "function" == typeof r._rollbarURH && r._rollbarURH.belongsToShim && r.removeEventListener("unhandledrejection", r._rollbarURH);
+                        var o = function(r) {
+                            var e, o, n;
+                            try {
+                                e = r.reason
+                            } catch (r) {
+                                e = void 0
+                            }
+                            try {
+                                o = r.promise
+                            } catch (r) {
+                                o = "[unhandledrejection] error getting `promise` from event"
+                            }
+                            try {
+                                n = r.detail, !e && n && (e = n.reason, o = n.promise)
+                            } catch (r) {
+                                n = "[unhandledrejection] error getting `detail` from event"
+                            }
+                            e || (e = "[unhandledrejection] error getting `reason` from event"), t && t.handleUnhandledRejection && t.handleUnhandledRejection(e, o)
+                        };
+                        o.belongsToShim = e, r._rollbarURH = o, r.addEventListener("unhandledrejection", o)
+                    }
+                },
+                wrapGlobals: function(r, e, o) {
+                    if (r) {
+                        var n, t, a = "EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");
+                        for (n = 0; n < a.length; ++n) r[t = a[n]] && r[t].prototype && l(e, r[t].prototype, o)
+                    }
+                }
+            }
+        }, function(r, e) {
+            "use strict";
+
+            function o(r, e) {
+                this.impl = r(e, this), this.options = e,
+                    function(r) {
+                        for (var e = function(e) {
+                                return function() {
+                                    var r = Array.prototype.slice.call(arguments, 0);
+                                    if (this.impl[e]) return this.impl[e].apply(this.impl, r)
+                                }
+                            }, o = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","), n = 0; n < o.length; n++) r[o[n]] = e(o[n])
+                    }(o.prototype)
+            }
+            o.prototype._swapAndProcessMessages = function(r, e) {
+                this.impl = r(this.options);
+                for (var o, n, t; o = e.shift();) n = o.method, t = o.args, this[n] && "function" == typeof this[n] && ("captureDomContentLoaded" === n || "captureLoad" === n ? this[n].apply(this, [t[0], o.ts]) : this[n].apply(this, t));
+                return this
+            }, r.exports = o
+        }, function(r, e) {
+            "use strict";
+            r.exports = function(i) {
+                return function(r) {
+                    if (!r && !window._rollbarInitialized) {
+                        for (var e, o, n = (i = i || {}).globalAlias || "Rollbar", t = window.rollbar, a = function(r) {
+                                return new t(r)
+                            }, l = 0; e = window._rollbarShims[l++];) o || (o = e.handler), e.handler._swapAndProcessMessages(a, e.messages);
+                        window[n] = o, window._rollbarInitialized = !0
+                    }
+                }
+            }
+        }])
+    </script>
+    <script>
+        var s = document.getElementsByTagName('script')[0],
+            p = document.createElement('script');
+        p.async = 'async';
+        p.src = `https://www.googletagmanager.com/gtag/js?id=${'UA-115455036-1'}`;
+        s.parentNode.insertBefore(p, s);
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-115455036-1');
+    </script>
+    <script>
+        ! function(t, h, e, j, s, n) {
+            t.hj = t.hj || function() {
+                (t.hj.q = t.hj.q || []).push(arguments)
+            }, t._hjSettings = {
+                hjid: 825509,
+                hjsv: 6
+            }, s = h.getElementsByTagName("head")[0], (n = h.createElement("script")).async = 1, n.src = "https://static.hotjar.com/c/hotjar-" + t._hjSettings.hjid + ".js?sv=" + t._hjSettings.hjsv, s.appendChild(n)
+        }(window, document)
+    </script>
+    <script>
+        window.iterateSettings = {
+                apiKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiNWJlZGU3ZjY5NTkyMjgwMDAxNzNiYjg0IiwiaWF0IjoxNTQyMzE4MDcwfQ.D6T43Ftg79WgCLgvgCKGcnhtU7ZTSymcT9FgPfHyehM"
+            },
+            function(e, t, a, n, i) {
+                if (!t.getElementById(n)) {
+                    e.IterateObjectName = i;
+                    var c = function() {
+                        c.c(arguments)
+                    };
+                    c.q = [], c.c = function(e) {
+                        c.q.push(e)
+                    }, e[i] = c;
+                    var o, r = t.getElementsByTagName(a)[0];
+                    "complete" === t.readyState ? d() : e.attachEvent ? e.attachEvent("onload", d) : e.addEventListener("load", d, !1)
+                }
+
+                function d() {
+                    (o = t.createElement(a)).id = n, o.async = 1, o.src = "https://platform.iteratehq.com/loader.js", r.parentNode.insertBefore(o, r)
+                }
+            }(window, document, "script", "iterate-js", "Iterate")
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-object-assign@1.1.0/dist/object-assign-auto.min.js"></script>
+    <link href="https://www.tokensets.com/static/css/2.06067455.chunk.css" rel="stylesheet">
+    <link href="https://www.tokensets.com/static/css/4.e3de6e7b.chunk.css" rel="stylesheet">
+    <link href="https://www.tokensets.com/static/css/main~748942c6.ed5406e3.chunk.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        ! function(l) {
+            function e(e) {
+                for (var r, t, n = e[0], o = e[1], u = e[2], f = 0, i = []; f < n.length; f++) t = n[f], p[t] && i.push(p[t][0]), p[t] = 0;
+                for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]);
+                for (s && s(e); i.length;) i.shift()();
+                return c.push.apply(c, u || []), a()
+            }
+
+            function a() {
+                for (var e, r = 0; r < c.length; r++) {
+                    for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
+                        var u = t[o];
+                        0 !== p[u] && (n = !1)
+                    }
+                    n && (c.splice(r--, 1), e = f(f.s = t[0]))
+                }
+                return e
+            }
+            var t = {},
+                p = {
+                    5: 0
+                },
+                c = [];
+
+            function f(e) {
+                if (t[e]) return t[e].exports;
+                var r = t[e] = {
+                    i: e,
+                    l: !1,
+                    exports: {}
+                };
+                return l[e].call(r.exports, r, r.exports, f), r.l = !0, r.exports
+            }
+            f.m = l, f.c = t, f.d = function(e, r, t) {
+                f.o(e, r) || Object.defineProperty(e, r, {
+                    enumerable: !0,
+                    get: t
+                })
+            }, f.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, f.t = function(r, e) {
+                if (1 & e && (r = f(r)), 8 & e) return r;
+                if (4 & e && "object" == typeof r && r && r.__esModule) return r;
+                var t = Object.create(null);
+                if (f.r(t), Object.defineProperty(t, "default", {
+                        enumerable: !0,
+                        value: r
+                    }), 2 & e && "string" != typeof r)
+                    for (var n in r) f.d(t, n, function(e) {
+                        return r[e]
+                    }.bind(null, n));
+                return t
+            }, f.n = function(e) {
+                var r = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return f.d(r, "a", r), r
+            }, f.o = function(e, r) {
+                return Object.prototype.hasOwnProperty.call(e, r)
+            }, f.p = "https://www.tokensets.com/";
+            var r = window.webpackJsonp = window.webpackJsonp || [],
+                n = r.push.bind(r);
+            r.push = e, r = r.slice();
+            for (var o = 0; o < r.length; o++) e(r[o]);
+            var s = n;
+            a()
+        }([])
+    </script>
+    <script src="https://www.tokensets.com/static/js/2.554dc774.chunk.min.js"></script>
+    <script src="https://www.tokensets.com/static/js/3.4faf9789.chunk.min.js"></script>
+    <script src="https://www.tokensets.com/static/js/4.bdcbecb6.chunk.min.js"></script>
+    <script src="https://www.tokensets.com/static/js/1.be001979.chunk.min.js"></script>
+    <script src="https://www.tokensets.com/static/js/main~748942c6.a2d29da0.chunk.min.js"></script>
+</body>
+
+</html>
